@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+body{
+    background: linear-gradient(60deg, #00a6ff, #4acfff);
+    background-repeat: no-repeat;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1{
+    font-size: 4rem;
+    text-shadow: 2px 5px 5px #02709c;
+    padding: 2rem;
+}
+
+header, form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    background-color: white;
+    display: inline-block;
+    border-radius: 999px;
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 2px 5px 10px skyblue;
+}
+
+form input,form button{
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    border-radius: 999px;
+    font-size: 1.2rem;
+}
+
+form input{
+    width: 20rem;
+}
+
+form button{
+    cursor: pointer;
+    color: skyblue;
+}
+
+form button:hover{
+    color: #00b7ff;
+}
+
+form button:hover i{
+    transform: rotate(90deg);
+}
+
+form input::placeholder{
+    font-size: 1.2rem;
+    color: skyblue;
+}
+
+ul{
+    border-top: white 2px solid;
+    border-bottom: white 2px solid;
+    border-radius: 10px;
+    margin: 2rem;
+    padding: 2rem;
+    list-style-type: none;
+}
+
+
+li{
+    width: 50rem;
+    color: black;
+    background-color: white;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 999px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    border-left: 2px solid #0597ff;
+    border-right: 2px solid #0597ff;
+}
+
+li span{
+    display: flex;
+    gap: .5rem;
+}
+
+li i{
+    color: skyblue;
+    cursor: pointer;
+}
+
+li .fa-trash{
+    display: none;
+}
+
+li i:hover{
+    color: rgb(0, 183, 255);
+}
+
+.line_check{
+    text-decoration: line-through;
+    color: red;
+    font-size: 1.3rem;
+}
